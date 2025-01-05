@@ -1,5 +1,6 @@
 import Header from '../components/Header';
 import IntroSection from '../components/IntroSection';
+import LearningSection from '../components/LearningSection';
 import ServicesSection from '../components/ServicesSection';
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
       <Header />
       <IntroSection />
       <ServicesSection />
+      <LearningSection />
     </>
   );
 };
