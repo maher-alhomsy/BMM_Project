@@ -1,3 +1,4 @@
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import IntroSection from '../components/IntroSection';
 import LearningSection from '../components/LearningSection';
@@ -12,6 +13,8 @@ const Home = () => {
       <ServicesSection />
       <LearningSection />
       <LessonsSection />
+
+      <Footer />
     </>
   );
 };
