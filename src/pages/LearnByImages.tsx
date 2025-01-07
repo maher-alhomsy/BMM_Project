@@ -3,6 +3,7 @@ const images = import.meta.glob('../assets/img-lessons/*', {
 });
 
 const LearnByImages = () => {
+  // @ts-ignore
   const imagePaths = Object.values(images).map((module) => module.default);
 
   return (
