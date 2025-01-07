@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="bg-[#FFC909] p-20">
-      <ul className="flex justify-between gap-11">
+      <ul className="flex flex-wrap justify-between gap-11">
         <li className="flex-1">
           <p className="text-white font-medium text-xl">About Company</p>
 
