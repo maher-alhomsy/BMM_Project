@@ -1,8 +1,11 @@
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 import logo from '../assets/logo.png';
 
-const data = ['Home', 'Lessons', 'Songs & Videos'];
+const data = [
+  { title: 'Home', path: '/' },
+  { title: 'Learn by images', path: 'learn-by-images' },
+];
 
 const Header = () => {
   return (
@@ -12,12 +15,19 @@ const Header = () => {
       </Link>
 
       <ul className="flex *:text-white *:text-lg *:font-semibold gap-3 md:gap-11">
-        {data.map((i) => (
-          <Link key={i} to="learn-by-images">
-            <li key={i} className="cursor-pointer hover:text-[#FFC909]">
-              {i}
-            </li>
-          </Link>
+        {data.map(({ path, title }) => (
+          <li key={title}>
+            <NavLink
+              className={({ isActive }) =>
+                `cursor-pointer hover:text-[#FFC909] ${
+                  isActive ? 'text-[#FFC909]' : ''
+                }`
+              }
+              to={path}
+            >
+              {title}
+            </NavLink>
+          </li>
         ))}
       </ul>
     </header>
