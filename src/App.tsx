@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router';
 import Home from './pages/Home';
 import Root from './pages/Root';
 import LearnByImages from './pages/LearnByImages';
+import LearnByVideos from './pages/LearnByVideos';
 
 function App() {
   const router = createBrowserRouter([
@@ -11,6 +12,7 @@ function App() {
       children: [
         { index: true, element: <Home /> },
         { path: 'learn-by-images', element: <LearnByImages /> },
+        { path: 'learn-by-videos', element: <LearnByVideos /> },
       ],
     },
   ]);

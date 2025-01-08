@@ -5,6 +5,7 @@ import logo from '../assets/logo.png';
 const data = [
   { title: 'Home', path: '/' },
   { title: 'Learn by images', path: 'learn-by-images' },
+  { title: 'Learn by videos', path: 'learn-by-videos' },
 ];
 
 const Header = () => {
