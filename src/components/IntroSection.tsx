@@ -1,5 +1,5 @@
-import intro_1 from '../assets/intro_1.png';
-import intro_2 from '../assets/intro_2.png';
+import intro_1 from '../assets/intro_1.webp';
+import intro_2 from '../assets/intro_2.webp';
 
 const IntroSection = () => {
   return (

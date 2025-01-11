@@ -1,4 +1,4 @@
-import img from '../assets/learning.png';
+import img from '../assets/learning.webp';
 
 const LearningSection = () => {
   return (
